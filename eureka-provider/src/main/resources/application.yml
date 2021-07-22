@@ -1,0 +1,14 @@
+# 应用名称
+spring:
+  application:
+    name: eureka-provider
+
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://eureka-server-1.com:7001/eureka/
+server:
+  port: 90
