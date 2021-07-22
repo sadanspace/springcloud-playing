@@ -1,4 +1,5 @@
-# 应用名称
+### 单机模式
+# 服务名称
 spring:
   application:
     name: eureka

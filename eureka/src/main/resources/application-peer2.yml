@@ -1,0 +1,16 @@
+### 高可用模式
+# 服务名称
+spring:
+  application:
+    name: eureka-server
+server:
+  port: 7002
+eureka:
+  instance:
+    hostname: eureka-server-2.com
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka-server-1.com:7001/eureka/
+
